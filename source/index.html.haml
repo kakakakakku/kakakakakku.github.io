@@ -1,6 +1,145 @@
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to "Read Online Documentation", "http://middlemanapp.com/"
-  / .doc
-/ .welcome
+%body.home
+  %header#header
+    #head.parallax{'parallax-speed' => '2'}
+      %h1#logo.text-center
+        %img.img-circle{alt: '', :src => 'images/me.png'}
+        %span.title Yoshiaki Yoshida
+        %span.tagline
+          Engineer
+          %br
+          %a{:href => ''} y.yoshida22@gmail.com
+    %nav.navbar.navbar-default.navbar-sticky
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle{'data-target' => '#bs-example-navbar-collapse-1', 'data-toggle' => 'collapse', :type => 'button'}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{:href => ''} Home
+            %li
+              %a{href: 'http://kakakakakku.hatenablog.com/', target: '_blank'}
+                = 'Blog'
+  %main#main
+    .container
+      .row.section.topspace
+        .col-md-12
+          %p.lead.text-center.text-muted
+            = 'Hello!'
+      .row.section.featured.topspace
+        %h2.section-title
+          %span
+            = 'Skills'
+        .row
+          .col-sm-6.col-md-3
+            %h3.text-center
+              = 'A'
+            %p
+              = 'A1'
+            %p.text-center
+              %a.btn.btn-action{:href => ''} Read more
+          .col-sm-6.col-md-3
+            %h3.text-center
+              = 'B'
+            %p
+              = 'B1'
+            %p.text-center
+              %a.btn.btn-action{:href => ''} Read more
+          .col-sm-6.col-md-3
+            %h3.text-center
+              = 'C'
+            %p
+              = 'C1'
+            %p.text-center
+              %a.btn.btn-action{:href => ''} Read more
+          .col-sm-6.col-md-3
+            %h3.text-center
+              = 'D'
+            %p
+              = 'D1'
+            %p.text-center
+              %a.btn.btn-action{:href => ''} Read more
+      .row.section.recentworks.topspace
+        %h2.section-title
+          %span
+            = 'My Presentations'
+        .thumbnails.recentworks.row
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4
+            %a.thumbnail{href: ''}
+              %span.img
+                %img{alt: '', src: 'images/mac.jpg'}
+              %span.title
+                = 'XXX'
+            %span.details
+              %a{:href => ''}
+                = 'Slideshare'
+            %h4
+            %p
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4
+            %a.thumbnail{href: ''}
+              %span.img
+                %img{alt: '', src: 'images/mac.jpg'}
+              %span.title
+                = 'YYY'
+            %span.details
+              %a{:href => ''}
+                = 'Slideshare'
+            %h4
+            %p
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4
+            %a.thumbnail{href: ''}
+              %span.img
+                %img{alt: '', src: 'images/mac.jpg'}
+              %span.title
+                = 'ZZZ'
+            %span.details
+              %a{:href => ''}
+                = 'Slideshare'
+            %h4
+            %p
+  %footer#footer
+    .container
+      .row
+        .col-md-3.widget
+          %h3.widget-title Contact
+          .widget-body
+            %p
+              %a{:href => 'mailto:#'}
+                = 'y.yoshida22@gmail.com'
+        .col-md-3.widget
+          %h3.widget-title Follow me
+          .widget-body
+            %p.follow-me-icons
+              %a{href: 'https://twitter.com/kakakakakku'}
+                %i.fa.fa-twitter.fa-2
+              %a{href: 'https://github.com/Kakakakakku'}
+                %i.fa.fa-github.fa-2
+        .col-md-3.widget
+          %h3.widget-title
+            = 'Sample1'
+          .widget-body
+            %p
+              = 'XXX'
+        .col-md-3.widget
+          %h3.widget-title
+            = 'Sample2'
+          .widget-body
+            %p
+              = 'XXX'
+  %footer#underfooter
+    .container
+      .row
+        .col-md-6.widget
+          .widget-body
+            %p
+              = ''
+        .col-md-6.widget
+          .widget-body
+            %p.text-right
+              Copyright © 2015, Yoshiaki Yoshida
+  %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'}
+  %script{src: 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'}
+  %script{src: 'assets/js/template.js'}
