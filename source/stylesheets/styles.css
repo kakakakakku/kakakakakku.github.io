@@ -283,6 +283,21 @@ a:hover {
 img {
   max-width: 100%;
 }
+
+/*doc
+---
+title: Buttons
+name: buttons
+category: style
+---
+
+ボタンを配置する．テキストは自動的に大文字になる．
+
+```html_example
+<a class="btn btn-primary" href="">btn-primary</a>
+<a class="btn btn-action" href="">btn-action</a>
+```
+*/
 .btn {
   font-size: 12px;
   font-size: 0.75rem;
@@ -496,6 +511,22 @@ img {
 
 
 **********************************************************************/
+
+/*doc
+---
+title: Sections
+name: sections
+category: style
+---
+
+セクションを配置する．テキストは自動的に大文字になる．
+
+```html_example
+<h2 class="section-title">
+  <span>Section</span>
+</h2>
+```
+*/
 .section-title,
 .entry-title {
   display: block;
